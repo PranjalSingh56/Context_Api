@@ -1,0 +1,12 @@
+Axios = it is the promise based http client to make API request in react
+syntax = 
+without axios -url repeated
+
+const api = axios.create({
+    baseURL:"https://jsonplaceholder.typicode.com",
+    header:{
+        "Content-Type":"application/json",
+    },
+});
+
+if base url changes we have to change everyware, hard to maintain 
