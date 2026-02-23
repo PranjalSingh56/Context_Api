@@ -17,6 +17,9 @@ function App() {
   const {users,isLoading} = useUsers();
     // const users=useUsers();
 
+    console.log(users);
+    
+
   return (
     <>
     {/* <SearchProvider>
@@ -33,6 +36,7 @@ function App() {
             {isLoading? (<Shimmer/>):(<ul>
                 {users.map((user)=>(
                     <li key={user.id}>{user.name}</li>
+                    
                 ))}
             </ul>)}
 
